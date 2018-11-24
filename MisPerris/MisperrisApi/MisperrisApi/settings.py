@@ -25,7 +25,7 @@ SECRET_KEY = 'ee*0^lcaug$^y+#(3t5o@gy)q(kx!s2r+tu!ets!5blyf3k@k0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['misperrisapi.pythonanywhere.com']
 
 
 # Application definition
@@ -103,10 +103,11 @@ AUTH_PASSWORD_VALIDATORS = [
 
 #Rest_framework
 
-REST_FRAMEWORK = {
-    'PAGE_SIZE': 10,
-}
-    
+#REST_FRAMEWORK = {
+#    'PAGE_SIZE': 10,
+#    'DEFAULT_PAGINATION_CLASS': None,
+#}
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
@@ -126,3 +127,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MEDIA_URL = '/media/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+
