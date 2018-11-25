@@ -135,6 +135,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-CORS_ORIGIN_WHITELIST = 'http://127.0.0.1:8887', 'https://miguelmartinez20.github.io/'
+CORS_ORIGIN_WHITELIST = 'https://miguelmartinez20.github.io/'
 
 
